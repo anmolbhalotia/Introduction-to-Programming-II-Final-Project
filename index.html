@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="lib/p5.min.js"></script>
+    <script src="lib/p5.dom.js"></script>
+
+    <script src="sketch.js"></script>
+
+    <!-- add extra scripts below -->
+    <script src="toolbox.js"></script>
+    <script src="colourPalette.js"></script>
+    <script src="helperFunctions.js"></script>
+
+    <!-- Calling the Free Hand Tool Sketch File to Html -->
+    <script src="freehandTool.js"></script>
+    <!-- Calling the Line Tool Sketch File to Html -->
+    <script src="lineToTool.js"></script>
+    <!-- Calling the Spray Can Tool Sketch File to Html -->
+    <script src="sprayCanTool.js"></script>
+    <!-- Calling the Mirror Draw Tool Sketch File to Html -->
+    <script src="mirrorDrawTool.js"></script>
+    <!-- Calling the Stamp Tool Sketch File to Html -->
+    <script src="stampTool.js"></script>
+    <!-- Calling the Eraser Tool Sketch File to Html -->
+    <script src="eraser.js"></script>
+    <!-- Calling the Fill Tool Sketch File to Html -->
+    <script src="fillTool.js"></script>
+    <!-- Calling the Edit Shape Tool Sketch File to Html -->
+    <script src="editShape.js"></script>
+    <!-- Calling the Random Pattern Tool Sketch File to Html -->
+    <script src="patternTool.js"></script>
+    <!-- Calling the Splash Tool Sketch File to Html -->
+    <script src="splash.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <style>
+      body
+      {
+        padding : 0;
+        margin : 0;
+      }
+    #controls
+      {
+        margin-bottom: 1px;
+      }
+    </style>
+
+  </head>
+  <body>
+  <div class="wrapper">
+      <div class="box header">My Drawing App
+
+        <button id="clearButton">Clear</button>
+        <button id="saveImageButton">Save Image</button>
+      </div>
+      <div class="box" id="sidebar"> </div>
+      <div id="content"></div>
+      <div class="box colourPalette"></div>
+      <div class="box options">
+      <!-- Setting Controls for the stamp tool here -->
+      <div id = "controls">
+        <div id = "numberOfStamps">Number Of Stamps:</div>
+        <div id = "sizeOfStamps">Size Of Stamps:</div>
+      </div>
+      </div>
+  </div>
+  </body>
+</html>
